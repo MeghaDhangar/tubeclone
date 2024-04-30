@@ -7,15 +7,15 @@ function LiveChat() {
     const message = useSelector((storee) => storee.chat.message)
     const dispatch = useDispatch();
 
-
-    // useEffect(()=>{
-    // const timer= setInterval(()=>{
-    //     dispatch(setMessage({name:generateRandomName(), message:generateRandomMessage(16)}))
-    // },1000)
-    // return(()=>{
-    //     clearInterval(timer);
-    // })
-    // },[]) 
+        // LIVE CHAT
+    useEffect(()=>{
+    const timer= setInterval(()=>{
+        dispatch(setMessage({name:generateRandomName(), message:generateRandomMessage(16)}))
+    },1000)
+    return(()=>{
+        clearInterval(timer);
+    })
+    },[]) 
     return (
         <div>
             <div className='px-4 py-1'>

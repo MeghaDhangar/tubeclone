@@ -117,7 +117,7 @@ function Sidebar() {
   
 
    return (
-      <div className=' relative  left-0 w-[10%%] p-5 h-[calc(100vh-4.625rem)] bg-white overflow-hidden overflow-y-scroll '>
+      <div className={`relative left-0 ${op ? "w-[15%]" :"w-[5%]"}  p-5 h-[calc(100vh-4.625rem)] bg-white overflow-hidden overflow-y-scroll`}>
          {
             sidebarArray.map((item, index) => {
                return (

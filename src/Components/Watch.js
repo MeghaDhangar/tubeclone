@@ -42,7 +42,7 @@ function Watch() {
 
     console.log(singleVedio);
     return (
-        <div className=' flex ml-5 w-[100%] mt-2'>
+        <div className=' flex ml-5 w-[90%%] mt-2'>
             <div className='flex w-[90%]'>
                 <div>
                     <iframe width="750"
